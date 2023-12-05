@@ -1,5 +1,11 @@
+import numpy as np
+import pandas as pd
+
+
 def load_csv(path):
-    pass
+    df = pd.read_csv(path)
+    return df
+
 
 def describe_df(df):
-    print(123)
+    return df.describe()

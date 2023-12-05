@@ -1,7 +1,12 @@
-from utils import load_csv, describe_df
+from utils import describe_df, load_csv
 
-if __name__ == '__main__':
-    df = load_csv('data/train.csv')
-    
-    describe_df(df)
-    
+
+def main():
+    df = load_csv(f"data/train.csv")
+    x = 1+1
+    print(df.head())
+    print(describe_df(df))
+
+
+if __name__ == "__main__":
+    main()
