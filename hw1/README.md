@@ -11,7 +11,7 @@ poetry add numpy pandas # добавление основных зависимо
 ```
 
 ## Добавление правил в pyproject.toml
-```txt
+```
 [tool.black]
 line-length = 100
 
