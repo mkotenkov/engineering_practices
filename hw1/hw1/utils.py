@@ -1,11 +1,14 @@
-import numpy as np
+"""utils module docstring"""
+
 import pandas as pd
 
 
 def load_csv(path):
-    df = pd.read_csv(path)
-    return df
+    """loads csv dataframe"""
+    data = pd.read_csv(path)
+    return data
 
 
-def describe_df(df):
-    return df.describe()
+def describe_df(data):
+    """returns string that describes dataframe"""
+    return data.describe()

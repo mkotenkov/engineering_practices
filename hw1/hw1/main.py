@@ -1,11 +1,14 @@
+"""main module docstring"""
+
 from utils import describe_df, load_csv
 
 
 def main():
-    df = load_csv(f"data/train.csv")
-    x = 1+1
-    print(df.head())
-    print(describe_df(df))
+    """main function"""
+    data = load_csv("data/train.csv")
+
+    print(data.head())
+    print(describe_df(data))
 
 
 if __name__ == "__main__":
