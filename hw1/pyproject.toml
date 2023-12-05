@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "hw1"
+version = "0.1.0"
+description = ""
+authors = ["Maksim Koltiugin <mkoltugin@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "^2.1.3"
+numpy = "^1.26.2"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.11.0"
+flake8 = "^6.1.0"
+pylint = "^3.0.2"
+isort = "^5.12.0"
+
+[tool.black]
+line-length = 100
+
+[tool.pylint."FORMAT"]
+max-line-length = 100
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
