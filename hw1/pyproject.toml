@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "hw1"
+name = "project"
 version = "0.1.0"
 description = ""
 authors = ["Maksim Koltiugin <mkoltugin@gmail.com>"]
