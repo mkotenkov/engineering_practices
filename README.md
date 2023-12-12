@@ -1,7 +1,11 @@
 # Домашнее задание №2
 
-* Код до форматирования может быть найден в `before_refactoring.md`
-* Ответ линтеров до и после рефакторинг находится в `linting.md`
+## Что выполнил
+```shell
+brew install git-lfs
+git lfs track "*.csv"
+git add .gitattributes
+```
 
 ---
 ## Как получить данные
