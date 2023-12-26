@@ -1,15 +1,9 @@
-"""main module docstring"""
+import luigi
+import pandas as pd
+import numpy as np
 
-from utils import describe_df, load_csv
+from sklearn.tree import DecisionTreeClassifier
 
+from project.tasks.get_data import GetDataTask
 
-def main():
-    """main function"""
-    data = load_csv("data/train.csv")
-
-    print(data.head())
-    print(describe_df(data))
-
-
-if __name__ == "__main__":
-    main()
+luigi.run()
