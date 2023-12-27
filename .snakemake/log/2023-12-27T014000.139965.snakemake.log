@@ -1,0 +1,26 @@
+Building DAG of jobs...
+Retrieving input from storage.
+Using shell: /bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job stats:
+job           count
+----------  -------
+split_data        1
+total             1
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Dec 27 01:40:00 2023]
+localrule split_data:
+    input: data/processed/train.csv
+    output: data/splitted/train.csv, data/splitted/val.csv
+    jobid: 0
+    reason: Forced execution
+    resources: tmpdir=/var/folders/vg/dc9hbcdn2p1585rz4234rzh80000gn/T
+
+[Wed Dec 27 01:40:00 2023]
+Finished job 0.
+1 of 1 steps (100%) done
+Complete log: .snakemake/log/2023-12-27T014000.139965.snakemake.log

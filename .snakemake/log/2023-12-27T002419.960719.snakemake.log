@@ -1,0 +1,37 @@
+Building DAG of jobs...
+Retrieving input from storage.
+Using shell: /bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job stats:
+job             count
+------------  -------
+prepare_data        1
+total               1
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Dec 27 00:24:20 2023]
+localrule prepare_data:
+    input: data/raw/train.csv, data/raw/test.csv
+    output: data/processed/train.csv, data/processed/test.csv
+    jobid: 0
+    reason: Missing output files: data/processed/train.csv, data/processed/test.csv
+    resources: tmpdir=/var/folders/vg/dc9hbcdn2p1585rz4234rzh80000gn/T
+
+RuleException:
+WorkflowError in file /Users/maksimkoltugin/Code/hse/engineering_practices/Snakefile, line 9:
+Failed to open source file /Users/maksimkoltugin/Code/hse/engineering_practices/prepare_data.py
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/maksimkoltugin/Code/hse/engineering_practices/prepare_data.py'
+[Wed Dec 27 00:24:20 2023]
+Error in rule prepare_data:
+    jobid: 0
+    input: data/raw/train.csv, data/raw/test.csv
+    output: data/processed/train.csv, data/processed/test.csv
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-12-27T002419.960719.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

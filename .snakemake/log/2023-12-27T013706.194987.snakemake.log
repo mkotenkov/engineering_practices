@@ -1,0 +1,23 @@
+Building DAG of jobs...
+Retrieving input from storage.
+Using shell: /bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job stats:
+job           count
+----------  -------
+split_data        1
+total             1
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Dec 27 01:37:06 2023]
+localrule split_data:
+    input: data/processed/train.csv
+    output: data/processed/train.csv, data/processed/val.csv
+    jobid: 0
+    reason: Forced execution
+    resources: tmpdir=/var/folders/vg/dc9hbcdn2p1585rz4234rzh80000gn/T
+
+Waiting at most 5 seconds for missing files.
