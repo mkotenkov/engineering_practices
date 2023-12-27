@@ -1,0 +1,7 @@
+Building DAG of jobs...
+MissingInputException in rule grid_search in file /Users/maksimkoltugin/Code/hse/engineering_practices/Snakefile, line 21:
+Missing input files for rule grid_search:
+    output: data/best_params.json
+    affected files:
+        data/processed/train.csv
+        data/processed/val.csv

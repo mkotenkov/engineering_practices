@@ -1,0 +1,38 @@
+Building DAG of jobs...
+Retrieving input from storage.
+Using shell: /bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job stats:
+job             count
+------------  -------
+grid_search         1
+prepare_data        1
+split_data          1
+total               3
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Dec 27 16:31:13 2023]
+localrule prepare_data:
+    input: data/raw/data.csv
+    output: data/processed/data.csv
+    jobid: 2
+    reason: Forced execution
+    resources: tmpdir=/var/folders/vg/dc9hbcdn2p1585rz4234rzh80000gn/T
+
+[Wed Dec 27 16:31:13 2023]
+Error in rule prepare_data:
+    jobid: 2
+    input: data/raw/data.csv
+    output: data/processed/data.csv
+    shell:
+        python3 project/tasks/prepare_data.py
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-12-27T163113.816125.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

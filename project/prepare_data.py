@@ -1,3 +1,5 @@
+import os
+import numpy as np
 import pandas as pd
 
 from argparse import ArgumentParser
@@ -33,6 +35,10 @@ def main():
 
     # prepare data
     df = prepare(df)    
+
+    # create output dir
+    if not os.path.exists(args.output):
+        os.makedirs(args.output)
 
     # save data
     df.to_csv(f"{args.output}/data.csv", index=False)    

@@ -1,0 +1,6 @@
+Building DAG of jobs...
+MissingInputException in rule train in file /Users/maksimkoltugin/Code/hse/engineering_practices/Snakefile, line 29:
+Missing input files for rule train:
+    output: models/model.pkl
+    affected files:
+        data/processed/train.csv
