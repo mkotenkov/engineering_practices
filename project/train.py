@@ -4,6 +4,8 @@ import pickle
 
 from argparse import ArgumentParser
 
+import pandas as pd
+
 from sklearn.tree import DecisionTreeClassifier
 
 
@@ -15,14 +17,18 @@ def parse_args():
     return parser.parse_args()
 
 
+def load_data(df_path):
+    df = pd.read_csv(df_path)
+    return df
+
+
 def load_params(params_path):
     with open(params_path) as f:
         params = json.load(f)
     return params
 
 
-def train(model, df):
-    # train model
+def train(model, df):    
     X_train = df.drop("Survived", axis=1)
     y_train = df["Survived"]
 
@@ -34,8 +40,9 @@ def train(model, df):
 def main():
     args = parse_args()
     params = load_params(args.params)
+    df = load_data(args.df)
     model = DecisionTreeClassifier(**params)
-    model = train(model, args.df)
+    model = train(model, df)
 
     if not os.path.exists(args.output):
         os.makedirs(args.output)

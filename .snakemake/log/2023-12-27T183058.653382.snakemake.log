@@ -1,0 +1,6 @@
+Building DAG of jobs...
+MissingInputException in rule test in file /Users/maksimkoltugin/Code/hse/engineering_practices/Snakefile, line 38:
+Missing input files for rule test:
+    output: test_results.txt
+    affected files:
+        data/models/model.pkl

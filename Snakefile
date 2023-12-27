@@ -32,4 +32,13 @@ rule train:
     output: 
         "models/model.pkl"
     shell:
-        "python3 project/tasks/train.py"
+        "python3 project/train.py"
+
+
+rule test:
+    input:
+        "models/model.pkl"
+    output:
+        "test_results.txt"
+    shell:
+        "python3 project/test.py"
