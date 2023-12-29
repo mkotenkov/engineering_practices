@@ -39,6 +39,6 @@ rule test:
     input:
         "models/model.pkl"
     output:
-        "results/{config['target']}test_results.txt"
+        "test_results.txt"
     shell:
         "python3 project/test.py"
