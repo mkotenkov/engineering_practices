@@ -1,7 +1,6 @@
 import json
 
 from argparse import ArgumentParser
-from ast import arg
 
 import pandas as pd
 
