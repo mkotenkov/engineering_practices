@@ -1,0 +1,24 @@
+Building DAG of jobs...
+Retrieving input from storage.
+Using shell: /bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job stats:
+job      count
+-----  -------
+check        1
+total        1
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Dec 29 18:24:36 2023]
+localrule check:
+    jobid: 0
+    reason: Rules with neither input nor output files are always executed.
+    resources: tmpdir=/var/folders/vg/dc9hbcdn2p1585rz4234rzh80000gn/T
+
+[Fri Dec 29 18:24:36 2023]
+Finished job 0.
+1 of 1 steps (100%) done
+Complete log: .snakemake/log/2023-12-29T182436.800228.snakemake.log

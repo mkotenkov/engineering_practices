@@ -1,0 +1,8 @@
+Building DAG of jobs...
+InputFunctionException in rule check in file /Users/maksimkoltugin/Code/hse/engineering_practices/Snakefile, line 5:
+Error:
+  KeyError: 'target'
+Wildcards:
+
+Traceback:
+  File "/Users/maksimkoltugin/Code/hse/engineering_practices/Snakefile", line 7, in <lambda> (rule check, line 5, /Users/maksimkoltugin/Code/hse/engineering_practices/Snakefile)

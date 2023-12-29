@@ -1,5 +1,3 @@
-
-
 rule prepare_data:
     input: 
         "data/raw/data.csv",    
@@ -41,6 +39,6 @@ rule test:
     input:
         "models/model.pkl"
     output:
-        "test_results.txt"
+        "results/{config['target']}test_results.txt"
     shell:
         "python3 project/test.py"

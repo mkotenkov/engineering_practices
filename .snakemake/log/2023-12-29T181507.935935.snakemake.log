@@ -1,0 +1,24 @@
+Building DAG of jobs...
+Retrieving input from storage.
+Using shell: /bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job stats:
+job             count
+------------  -------
+run_pipeline        1
+total               1
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Dec 29 18:15:07 2023]
+localrule run_pipeline:
+    output: results/{config['target']}test_results.txt
+    jobid: 0
+    reason: Missing output files: results/{config['target']}test_results.txt
+    resources: tmpdir=/var/folders/vg/dc9hbcdn2p1585rz4234rzh80000gn/T
+
+RuleException in rule run_pipeline in file /Users/maksimkoltugin/Code/hse/engineering_practices/Snakefile, line 6:
+NameError: The name "'target'" is unknown in this context. Please make sure that you defined that variable. Also note that braces not used for variable access have to be escaped by repeating them, i.e. {{print $1}}, when formatting the following:
+echo {config['target']}
